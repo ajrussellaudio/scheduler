@@ -5,11 +5,12 @@ describe('events reducer', () => {
     const newEvent = {
       title: 'My first appointment',
       start: new Date('2018-06-12T19:30'),
-      end: new Date('2018-06-12T20:30')
+      end: new Date('2018-06-12T20:30'),
+      rrule: 'RRULE:FREQ=WEEKLY',
     };
     const action: Action = {
       type: 'ADD_EVENT',
-      payload: newEvent
+      payload: newEvent,
     };
     const state = reducer([], action);
     expect(state).toEqual([newEvent]);

@@ -1,4 +1,4 @@
-import { Event } from 'react-big-calendar';
+import { Event } from './Events';
 
 export type Action = {
   type: 'ADD_EVENT';
