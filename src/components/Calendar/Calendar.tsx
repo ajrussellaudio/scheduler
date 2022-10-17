@@ -16,7 +16,7 @@ export const Calendar = () => {
       defaultDate={new Date()}
       defaultView="month"
       events={events}
-      style={{ height: '100vh' }}
+      style={{ height: '100%' }}
     />
   );
 };
